@@ -15,7 +15,7 @@ class CreateCandidatesTable extends Migration {
 		Schema::create('candidates', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('websirte_url');
+			$table->string('website_url');
 			$table->text('description');
 			$table->enum('job_type', ['full', 'partial', 'freelance']);
 			$table->integer('category_id')->unsigned();
