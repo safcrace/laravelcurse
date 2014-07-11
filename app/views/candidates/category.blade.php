@@ -1,4 +1,4 @@
-<!--@extends('layout')-->
+@extends('layout')
 
 @section('content')
 
@@ -12,13 +12,13 @@
             <th>Descripción</th>
             <th>Ver</th>
         </tr>
-        @foreach ($category_candidates as $candidate)
+        @foreach ($category->paginate_candidates as $candidate)
         <tr>
             <td>{{ $candidate->user->full_name }}</td>
             <td>{{ $candidate->job_type_title }}</td>
             <td>{{ $candidate->description }}</td>
             <td width="50">
-                <a href="" class="btn btn-info">
+                <a href="{{ route('candidate', [$candidate->slug, $candidate->id]) }}" class="btn btn-info">
                     Ver
                 </a>
             </td>
@@ -28,7 +28,7 @@
 
     </table>
 
-    
+    {{ $category->paginate_candidates->links() }}
 
 </div> <!-- /container -->
 
