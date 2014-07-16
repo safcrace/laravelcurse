@@ -98,7 +98,7 @@ return array(
 		'full_name' => 'nombre completo',
         'email'     => 'correo electronico',
         'password'  => 'clave',
-        'password_confirmation' => 'repita su clave'
+        'password_confirmation' => 'confirme su clave'
 	),
 
 );

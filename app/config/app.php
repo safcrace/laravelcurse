@@ -121,8 +121,11 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
+		//Vendor
 		'Way\Generators\GeneratorsServiceProvider',
-		'Barryvdh\Debugbar\ServiceProvider'
+		'Barryvdh\Debugbar\ServiceProvider',
+		//Custom
+		'HireMe\Components\FieldServiceProvider'
 	),
 
 	/*
@@ -190,6 +193,8 @@ return array(
 		'Validator'       => 'Illuminate\Support\Facades\Validator',
 		'View'            => 'Illuminate\Support\Facades\View',
 
+		//custom
+		'Field'			  => 'HireMe\Components\Field',
 	),
 
 );
