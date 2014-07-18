@@ -76,7 +76,7 @@ class FieldBuilder {
 		$error = null;
 		if ($this->session->has('errors'))
 		{
-			$errors = $this->session('errors');
+			$errors = $this->session->get('errors');
 			if ($errors->has($name))
 			{
 				$error = $errors->first($name);
